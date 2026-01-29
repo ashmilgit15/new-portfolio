@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ashmilp.dev"),
+  metadataBase: new URL("https://ashmil-folio.vercel.app"),
   title: "Ashmil P | AI Web & App Developer",
   description:
     "15-year-old AI developer building scalable SaaS and web applications. Full-stack development, AI integration, and cutting-edge solutions.",

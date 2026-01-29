@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart, Github, Instagram } from "lucide-react";
+import { Heart, Github, Instagram, Linkedin } from "lucide-react";
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
@@ -38,6 +38,15 @@ export function Footer() {
                             aria-label="Instagram Profile"
                         >
                             <Instagram className="w-5 h-5 text-muted-foreground group-hover:text-pink-500 transition-colors" />
+                        </a>
+                        <a
+                            href="https://linkedin.com/in/ashmil-p"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-center justify-center w-10 h-10 rounded-full glass border border-border/50 hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-300"
+                            aria-label="LinkedIn Profile"
+                        >
+                            <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-blue-500 transition-colors" />
                         </a>
                     </div>
 
