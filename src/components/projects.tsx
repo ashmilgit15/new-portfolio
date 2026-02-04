@@ -24,6 +24,15 @@ const projects: Project[] = [
         featured: true,
         gradient: "from-violet-500/20 to-cyan-500/20",
     },
+    {
+        title: "AI Frontier 2026",
+        description: "A futuristic AI news and research platform built to track the transition to AGI. Features a 'Research Radar' for deep technical dives and an indexed toolkit of 60+ autonomous agents and AI tools.",
+        techStack: ["HTML5", "Vanilla CSS", "JavaScript", "Automation"],
+        liveUrl: "https://ashmilgit15.github.io/ai-frontier-2026/",
+        githubUrl: "https://github.com/ashmilgit15/ai-frontier-2026",
+        featured: true,
+        gradient: "from-cyan-500/20 to-lime-500/20",
+    },
 ];
 
 export function Projects() {
@@ -57,7 +66,7 @@ export function Projects() {
                 </motion.div>
 
                 {/* Projects Grid */}
-                <div className="flex justify-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center max-w-5xl mx-auto">
                     {projects.map((project, index) => (
                         <motion.div
                             key={project.title}
@@ -65,7 +74,7 @@ export function Projects() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group relative max-w-lg w-full"
+                            className="group relative w-full"
                         >
                             <div
                                 className={`glass rounded-2xl p-8 h-full flex flex-col transition-all duration-500 
@@ -112,13 +121,26 @@ export function Projects() {
                                     {project.liveUrl && (
                                         <Button
                                             variant="outline"
-                                            size="lg"
-                                            className="glass border-border/50 hover:border-primary/50 hover:bg-primary/5"
+                                            size="sm"
+                                            className="glass border-border/50 hover:border-primary/50 hover:bg-primary/5 flex-1"
                                             asChild
                                         >
                                             <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                                                 <ExternalLink className="w-4 h-4 mr-2" />
                                                 View Demo
+                                            </a>
+                                        </Button>
+                                    )}
+                                    {project.githubUrl && (
+                                        <Button
+                                            variant="outline"
+                                            size="sm"
+                                            className="glass border-border/50 hover:border-primary/50 hover:bg-primary/5 flex-1"
+                                            asChild
+                                        >
+                                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                                                <Github className="w-4 h-4 mr-2" />
+                                                Code
                                             </a>
                                         </Button>
                                     )}
