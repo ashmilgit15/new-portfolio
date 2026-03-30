@@ -33,6 +33,14 @@ const projects: Project[] = [
         featured: true,
         gradient: "from-cyan-500/20 to-lime-500/20",
     },
+    {
+        title: "YT Automation",
+        description: "A private YouTube automation dashboard that turns a topic or niche into fully produced videos and Shorts, with review controls, job management, and multi-channel publishing.",
+        techStack: ["Next.js", "FastAPI", "Celery", "Redis", "PostgreSQL"],
+        githubUrl: "https://github.com/ashmilgit15/yt-automation",
+        featured: true,
+        gradient: "from-red-500/20 to-amber-500/20",
+    },
 ];
 
 export function Projects() {
@@ -77,7 +85,7 @@ export function Projects() {
                             className="group relative w-full"
                         >
                             <div
-                                className={`glass rounded-2xl p-8 h-full flex flex-col transition-all duration-500 
+                                className={`glass relative overflow-hidden rounded-2xl p-8 h-full flex flex-col transition-all duration-500 
                   hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1`}
                             >
                                 {/* Gradient Top Bar */}
