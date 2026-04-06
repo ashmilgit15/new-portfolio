@@ -41,6 +41,14 @@ const projects: Project[] = [
         featured: true,
         gradient: "from-red-500/20 to-amber-500/20",
     },
+    {
+        title: "YT Video Gen",
+        description: "An AI Shorts generator that turns a topic into vertical videos, connects multiple YouTube accounts, and uploads or schedules Shorts with AI-generated metadata, retry support, and FFmpeg-based rendering.",
+        techStack: ["React", "Vite", "FastAPI", "SQLAlchemy", "Clerk", "Neon Postgres"],
+        githubUrl: "https://github.com/ashmilgit15/yt-video-gen",
+        featured: true,
+        gradient: "from-fuchsia-500/20 to-rose-500/20",
+    },
 ];
 
 export function Projects() {
